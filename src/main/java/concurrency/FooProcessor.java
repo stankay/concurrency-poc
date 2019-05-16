@@ -11,6 +11,7 @@ public class FooProcessor {
         ProofOfConcept.hashCodes.put(this.hashCode(), this.hashCode());
 
         try {
+            //sleep to simulate long running task in order to utilize multiple EJBs from pool
             Thread.sleep(1300);
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -13,6 +13,9 @@ public class ProofOfConcept {
 
     @Inject FooProcessor fooProcessor;
 
+    /**
+     * Record hascodes of FooProcessors that were used
+     */
     public static ConcurrentHashMap<Integer, Integer> hashCodes = new ConcurrentHashMap<>();
 
     @PostConstruct
